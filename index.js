@@ -311,7 +311,7 @@ const questions = [
 //             return
 //         }
 //         //MESSAGE FOR SUCCESS
-//         console.log('Your message has been successfully written the file.');
+//         console.log('Your message has been successfully written to the file.');
 //     })
 inquirer.prompt(questions).then((answers) => {
     console.log(JSON.stringify(answers, null, '  '));
