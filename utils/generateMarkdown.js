@@ -58,8 +58,8 @@ function generateMarkdown(data) {
   <!--* ${data.notes}-->
 
   ## Usage
-  * [Preview Image](./${data.media})
-  * ${data.link}
+  * ![Preview Image](./assets/images/${data.media})
+  * [GitHub Repo](${data.link})
   <!--* ${data.feature}-->
   <!--* ${data.confirmAddUsage}-->
   
@@ -71,7 +71,7 @@ function generateMarkdown(data) {
   * ${data.license}
   
   ## Badges
-  * ${data.badges = renderLicenseBadge(license)}
+  * ${data.badges = renderLicenseBadge()};
 
   ## Features
   * ${data.features}

@@ -1,6 +1,6 @@
 
   # Title
-  README-GENIE 
+  README-GENIE
   
   ## Overview 
   >As a CLI (Command Line Interface) tool, README-gen-ie walks the user through their project to organize and communicate to the community what they planned, completed, and wish to develop further.>
@@ -13,8 +13,7 @@
   * [Table of Contents](#contents),
   * [Description](#description),
   * [Installation](#installation),
-  * [Notes](#notes),
-  * [Usage](#usage),
+  * [Notes](#notes),* [Usage](#usage),
   * [Credits](#credits),
   * [License](#license),
   * [Badges](#badges),
@@ -23,11 +22,11 @@
   * [Tests](#tests)
 
   ## Description
-  <!--undefined I DON'T THINK I NEED THIS-->
+  <!--undefined hidden class-->
   * DRY - Don't-Repeat-Yourself means to me that whenever you refer to an old project or file to start a new one, you can write code for that instead. Then, you can concentrate on new content.
   * After spending a few hours on a detailed README file, it seemed worth it to automate it so that even the most detailed README would not take more than 30 minutes to generate.
   * README files can be tedious, so often they are done with the bare-bones minimum. The GENIE automates the organization so one can focus on communication. The benefit is producing a detailed README file in a fraction of the time.
-  * I learned that I was not alone procrastinating my README file, so a CLI (Command Line Interface) tool that helps to quickly specify a high quality presentation is a win-win!
+  * I learned that I was not alone in procrastinating my README file, so a CLI (Command Line Interface) tool that helps to quickly specify a high quality presentation is a win-win!
   * The best detail of this CLI tool is that if you are really in a bind, you can defer the most time consuming description part that you are reading right now, and tend to it at a later date. So, it helps reduce procrastination of a writing challenge, all while accepting different levels of detail, in order to be as user friendly as possible.
 
   ## Installation
@@ -49,8 +48,8 @@
   <!--* undefined-->
 
   ## Usage
-  * readme-genie.png
-  * https://github.com/ChristiLewis/readme-gen
+  * ![Preview Image](./assets/images/readme-genie.png)
+  * [GitHub Repo](https://github.com/ChristiLewis/readme-gen)
   <!--* true-->
   <!--* false-->
   
@@ -62,7 +61,7 @@
   * true
   
   ## Badges
-  * true
+  * ;
 
   ## Features
   * node.js expediting
@@ -74,4 +73,4 @@
   * TBD
 
   ## Contact
-  * clcXXXX.com
+  * clc@xxxxxxx.com
