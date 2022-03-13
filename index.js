@@ -31,7 +31,7 @@ const questions = [
             type: 'input',
             name: 'overview',
             message: 'Now provide a brief summary of the project. (Required)',
-            //ANSWER FOR README-GENIE = AS A CLI(COMMAND LINE INTERFACE) TOOL, README-GENIE WALKS THE USER THROUGH THEIR PROJECT TO ORGANIZE AND COMMUNICATE TO THE COMMUNITY WHAT THEY PLANNED, COMPLETED, AND WISH TO DEVELOP FURTHER.
+            //ANSWER FOR README-GENIE = As a CLI (Command Line Interface) tool, README-GEN-IE walks the user through their project to organize and communicate to the community what they planned, completed, and wish to develop further.
             validate: overviewInput => {
                 if (overviewInput) {
                     return true;
@@ -49,17 +49,17 @@ const questions = [
             choices: [
                 '[Title](#title)', 
                 '\ [Overview](#overview)',
-                '\ [Table of Contents](#contents)',
+                '\_ [Table of Contents](#contents)\_',
                 '\ [Description](#description)',
-                '\ [Installation](#installation)',
-                '\ [Notes](#notes)',
-                '\ [Usage](#usage)',
-                '\ [Credits](#credits)',
-                '\ [License](#license)',
-                '\ [Badges](#badges)',
-                '\ [Features](#features)',
-                '\ [Contribute](#contribute)',
-                '\ [Tests](#tests)',
+                '-[] [Installation](#installation)',
+                '-[] [Notes](#notes)',
+                '* [Usage](#usage)',
+                '* [Credits](#credits)',
+                '1) [License](#license)',
+                '2) [Badges](#badges)',
+                '[Features](#features)',
+                '[Contribute](#contribute)',
+                '    [Tests](#tests)',
             ]
         },
         {
@@ -149,10 +149,10 @@ const questions = [
             message: 'Please confirm your project does not require node.js.',
             validate: nodeInput => {
                 if (!nodeInput) {
-                    return true;
+                    return null;
                 } else {
-                    console.log('In order to run this application, you will need node.js.If you do not have it yet, please visit https://nodejs.org/en/download to download the latest node. js LTS Version that includes npm.');
-                    return false;
+                    console.log('In order to run this node application, you will need node.js. If you do not have it yet, please visit https://nodejs.org/en/download to download the latest node. js LTS Version that includes npm.');
+                    
                 }
             }
         },

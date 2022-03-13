@@ -1,14 +1,14 @@
 
   # Title
-  x
+  README-GEN-IE
   
   ## Overview 
-  >x>
+  >As a CLI (Command Line Interface) tool, README-gen-ie walks the user through their project to organize and communicate to the community what they planned, completed, and wish to develop further.>
 
   <!--HERE FOUND https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString-->
 
   ## Contents
-  [Title](#title), [Overview](#overview), [Table of Contents](#contents), [Description](#description), [Installation](#installation), [Notes](#notes), [Usage](#usage), [Credits](#credits), [License](#license), [Badges](#badges), [Features](#features), [Contribute](#contribute), [Tests](#tests)
+  [Title](#title), [Overview](#overview),_ [Table of Contents](#contents)_, [Description](#description),-[] [Installation](#installation),-[] [Notes](#notes),* [Usage](#usage),* [Credits](#credits),1) [License](#license),2) [Badges](#badges),[Features](#features),[Contribute](#contribute),    [Tests](#tests)
 
   ## Description
   undefined
@@ -24,14 +24,14 @@
   * undefined
 
   ## Usage
-  * x
-  * x
-  * false
-  * false
+  * readme-genie.png
+  * https://
+  * true
+  * true
   
   ## Credits
-  * x
-  * x
+  * UM Bootcamp
+  * ChristiLewis
 
   ## License
   * true
@@ -46,7 +46,7 @@
   * true
 
   ## Tests
-  * tbd
+  * TBD
 
   ## Contact
-  * clcarchitect@gmail.com
+  * TBD
