@@ -41,7 +41,7 @@ const generateUsage = examplesArr => {
 module.exports = templateData => {
     //console.log(templateData);
     //DESTRUCTURE examples AND description DATA FROM TEMPLATEDATA BASED ON THEIR PROPERTY KEY NAMES
-    const { examples, description, ...header } = templateData;
+    const { title, overview, ...header } = templateData;
 
     return `
     # Title
@@ -51,14 +51,29 @@ module.exports = templateData => {
     ## Installation
 
     ## Usage
+    * JavaScript developers worldwide.
+
+![quizmo logo](assets/images/screenshot-quizmo.png)
+\ [quizmo](https://christilewis.github.io/quizmo/)
 
     ## Credits
+    * This is Christi Lewis' project assignment submitted for review [UM's Coding Bootcamp](https://bootcamp.miami.edu/coding/)
 
     ## License
+    * Contents are credited as inspired by the bootcamp mentioned above. UM Coding Bootcamp content it primarily MIT license, open source.
 
     ## Badges
+    * There are no badges generated at this time. For more information: [shields.io](https://shields.io/) 
 
     ## Features
+
+    * Node.js README.md wizard
+
+    ## Contribute
+    * Any recommendations?  Please see [contributorCovenant](https://www.contributor-covenant.org)
+
+    ## Tests
+    * There are no tests at this time, we are open to suggestions.
 
     ${generateDescription(description)}
     ${generateUsage(examples)}
