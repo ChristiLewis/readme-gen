@@ -17,7 +17,7 @@ const questions = [
             type: 'input',
             name: 'title',
             message: 'What is the name of your project or title for this README.md our Genie is generating? (Required)',
-            //ANSWER FOR THIS PROJECT = README-GENIE
+            //ANSWER FOR THIS PROJECT = README-GEN-IE
             validate: titleInput => {
                 if (titleInput) {
                     return true;
@@ -48,18 +48,18 @@ const questions = [
             //ANSWER FOR README-GENIE = SELECT ALL
             choices: [
                 '[Title](#title)', 
-                '\ [Overview](#overview)',
-                '\_ [Table of Contents](#contents)\_',
-                '\ [Description](#description)',
-                '-[] [Installation](#installation)',
-                '-[] [Notes](#notes)',
+                '* [Overview](#overview)',
+                '* [Table of Contents](#contents)',
+                '* [Description](#description)',
+                '* [Installation](#installation)',
+                '* [Notes](#notes)',
                 '* [Usage](#usage)',
                 '* [Credits](#credits)',
-                '1) [License](#license)',
-                '2) [Badges](#badges)',
-                '[Features](#features)',
-                '[Contribute](#contribute)',
-                '    [Tests](#tests)',
+                '* [License](#license)',
+                '* [Badges](#badges)',
+                '* [Features](#features)',
+                '* [Contribute](#contribute)',
+                '* [Tests](#tests)'
             ]
         },
         {
@@ -72,7 +72,7 @@ const questions = [
             type: 'input',
             name: 'descriptionQ1',
             message: 'What inspired and motivated you to start this development project? (Required)',
-            //ANSWER FOR README-GENIE = DRY - DON'T REPEAT YOURSELF MEANS TO ME WHENEVER YOU REFER TO AN OLD EXAMPLE TO MAKE A NEW ONE, YOU CAN WRITE CODE FOR THAT INSTEAD. THEN, YOU CAN CONCENTRATE ON NEW CONTENT.
+            //ANSWER FOR README-GENIE = DRY - Don't-Repeat-Yourself means to me that whenever you refer to an old project or file to start a new one, you can write code for that instead. Then, you can concentrate on new content.
             when:(answers) => answers.description === true,
             validate: descriptionQ1Input => {
                 if (descriptionQ1Input) {
@@ -87,7 +87,7 @@ const questions = [
             type: 'input',
             name: 'descriptionQ2',
             message: 'Why did you build this project? (Required)',
-            //ANSWER FOR README-GENIE = AFTER SPENDING A FEW HOURS ON A DETAILED README FILE, IT SEEMED WORTH IT TO AUTOMATE IT SO THAT THE MOST DETAILED README WOULD NOT TAKE MORE THAN AN HOUR TO GENERATE.
+            //ANSWER FOR README-GENIE = After spending a few hours on a detailed README file, it seemed worth it to automate it so that even the most detailed README would not take more than 30 minutes to generate.
             when:(answers) => answers.description === true,
             validate: descriptionQ2Input => {
                 if (descriptionQ2Input) {
@@ -102,7 +102,7 @@ const questions = [
             type: 'input',
             name: 'descriptionQ3',
             message: 'What problem does it solve? (Required)',
-            //ANSWER FOR README-GENIE = README FILES ARE TEDIOUS, SO OFTEN DONE WITH THE BARE BONE MINIMUM. THE GENIE KEEPS THE ORGANIZATION AND COMMUNICATION BENEFIT OF PRODUCING A DETAILED README FILE IN A FRACTION OF THE TIME.
+            //ANSWER FOR README-GENIE = README files can be tedious, so often they are done with the bare-bones minimum. The GENIE automates the organization so one can focus on communication. The benefit is producing a detailed README file in a fraction of the time.
             when:(answers) => answers.description === true,
             validate: descriptionQ3Input => {
                 if (descriptionQ3Input) {
@@ -117,7 +117,7 @@ const questions = [
             type: 'input',
             name: 'descriptionQ4',
             message: 'What did you learn? (Required)',
-            //ANSWER FOR README-GENIE = I LEARNED EVERYONE SEEMS TO PROCRASTINATE THEIR README FILE, SO A CLI TOOL THAT HELPS TO QUICKLY SPECIFY A HIGH QUALITY PRESENTATION IS A WIN-WIN.
+            //ANSWER FOR README-GENIE = I learned that I was not alone procrastinating my README file, so a CLI (Command Line Interface) tool that helps to quickly specify a high quality presentation is a win-win!
             when:(answers) => answers.description === true,
             validate: descriptionQ4Input => {
                 if (descriptionQ4Input) {
@@ -132,7 +132,7 @@ const questions = [
             type: 'input',
             name: 'descriptionQ5',
             message: 'What makes your project standout? (Required)',
-            //ANSWER FOR README-GENIE = THE BEST DETAIL OF THIS CLI TOOL IS THAT IF YOU ARE REALLY IN A BIND, YOU CAN DEFER THE MOST TIME CONSUMING DESCRIPTION PART THAT YOU ARE READING RIGHT NOW, AND TEND TO IT AT A LATER DATE. SO IT HELPS REDUCE PROCRASTINATING A TEDIOUS CHORE AND YET ACCEPTS DIFFERENT LEVELS OF DETAIL TO BE AS USER FRIENDLY AS POSSIBLE.
+            //ANSWER FOR README-GENIE = The best detail of this CLI tool is that if you are really in a bind, you can defer the most time consuming description part that you are reading right now, and tend to it at a later date. So, it helps reduce procrastination of a writing challenge, all while accepting different levels of detail, in order to be as user friendly as possible.
             when:(answers) => answers.description === true,
             validate: descriptionQ5Input => {
                 if (descriptionQ5Input) {
@@ -171,21 +171,21 @@ const questions = [
             },
             //ANSWER FOR README-GENIE = SELECT ALL
             choices: [
-                'In your root directory clone the <project directory name> repository: git clone git@github.com:<userName>/<project directory name>.git ',
-                'Make sure you are in the root directory of the project you just cloned: cd <project directory name>',
+                '1) In your root directory clone the <project directory name> repository: git clone git@github.com:<userName>/<project directory name>.git ',
+                '2) Make sure you are in the root directory of the project you just cloned: cd <project directory name>',
                 'Check your version of node.js: node -v',
-                'Check your version of npm included in node.js: npm -v',
-                'Install a node package manager or npm named inquirer: npm i inquirer',
-                'Install another npm named file system or fs: npm i fs',
-                'Initiate npm: npm init -y',
-                'Verify your npm packages are installed: ls node_modules',
-                'Add a .gitignore file to spare your GitHub repository uploading all npm modules with each commit: touch .gitignore',
-                'Open the .gitignore file and add on line 1: node_modules/',
-                'On line 2 .gitignore file add for mac users: .DS_Store/',
-                'From the command line, run the node.js app: node index.js',
-                'Follow the command line instructions, and after you are happy with your result, uninstall the npm packages to not clog your computer: npm uninstall inquirer',
-                'Unistall the fs package too: npm uninstall fs',
-                'See below for additional or alternate installation instructions.'
+                '3) Check your version of npm included in node.js: npm -v',
+                '4) Install a node package manager or npm named inquirer: npm i inquirer',
+                '5) Install another npm named file system or fs: npm i fs',
+                '6) Initiate npm: npm init -y',
+                '7) Verify your npm packages are installed: ls node_modules',
+                '8) Add a .gitignore file to spare your GitHub repository uploading all npm modules with each commit: touch .gitignore',
+                '9) Open the .gitignore file and add on line 1: node_modules/',
+                '10) On line 2 .gitignore file add for mac users: .DS_Store/',
+                '11) From the command line, run the node.js app: node index.js',
+                '12) Follow the command line instructions, and after you are happy with your result, uninstall the npm packages to not clog your computer: npm uninstall inquirer',
+                '13) Unistall the fs package too: npm uninstall fs',
+                '14) See below for additional notes or alternate installation instructions.'
                 
             ]
         },
@@ -235,7 +235,15 @@ const questions = [
             type: 'confirm',
             name: 'feature',
             message: 'Would you like to feature this example?',
-            default: false
+            validate: featureConfirm => {
+                if (featureConfirm) {
+                    return true;
+                } else {
+                    console.log('We recommend featuring for more project traction.');
+                    return false;
+                }
+            }
+            /*default: false*/
         },
         {
             type: 'confirm',
@@ -273,7 +281,6 @@ const questions = [
             type: 'confirm',
             name: 'license',
             message: 'Please confirm your organization has, or your intent is to obtain an MIT open source license for this project. (Recommended)',
-
             validate: licenseConfirm => {
                 if (licenseConfirm) {
                     console.log('This project is indirectly licensed and/or intends to be licensed with one of the following:> MIT license \ Apache License 2.0, or \ GNU General Public License v3.0>')
@@ -294,7 +301,7 @@ const questions = [
                     return true;
                 } else {
                     console.log('Coming Soon!');
-                    return false;
+                    /*return false;*/
                 }
             }
         },
@@ -307,7 +314,7 @@ const questions = [
                     return true;
                 } else {
                     console.log('Coming Soon!');
-                    return false;
+                    /* return false;*/
                 }
             }
         },

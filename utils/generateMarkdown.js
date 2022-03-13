@@ -39,29 +39,29 @@ function generateMarkdown(data) {
   ## Overview 
   >${data.overview}>
 
-  <!--HERE FOUND https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString-->
+  <!--GO AHEAD AND MANUALLY FIX THIS MARKDOWN FILE SO THE TABLE OF CONTENTS AND THE INSTALLATION NOTES LOOK LIKE A LIST.  I'M TRYING TO SOLVE PRINTING THE CHOICES ARRAY FROM THE INDEX.JS FILE AS AN OBJECT SO IT LOOKS MORE LIKE A LIST- IS IT A PARSE FUNCTION? FOUND https://www.w3schools.com/js/js_json_parse.asp OR IS IT A STRING  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString-->
 
   ## Contents
   ${data.contents}
 
   ## Description
-  ${data.confirmDescription}
-  ** ${data.descriptionQ1}
-  ** ${data.descriptionQ2}
-  ** ${data.descriptionQ3}
-  ** ${data.descriptionQ4}
-  ** ${data.descriptionQ5}
+  <!--${data.confirmDescription} hidden class-->
+  * ${data.descriptionQ1}
+  * ${data.descriptionQ2}
+  * ${data.descriptionQ3}
+  * ${data.descriptionQ4}
+  * ${data.descriptionQ5}
 
   ## Installation
-  * ${data.node}
-  * ${data.nodeInput}
-  * ${data.notes}
+  <!--* ${data.node}-->
+  ${data.nodeInput}
+  <!--* ${data.notes}-->
 
   ## Usage
-  * ${data.media}
+  * [Preview Image](./${data.media})
   * ${data.link}
-  * ${data.feature}
-  * ${data.confirmAddUsage}
+  <!--* ${data.feature}-->
+  <!--* ${data.confirmAddUsage}-->
   
   ## Credits
   * ${data.credits}
@@ -71,7 +71,7 @@ function generateMarkdown(data) {
   * ${data.license}
   
   ## Badges
-  * ${data.badges}
+  * ${data.badges = renderLicenseBadge(license)}
 
   ## Features
   * ${data.features}
