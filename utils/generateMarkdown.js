@@ -37,15 +37,15 @@ function generateMarkdown(data) {
   ${data.title}
   
   ## Overview 
-  >${data.overview}>
+  >${data.overview}
 
   <!--GO AHEAD AND MANUALLY FIX THIS MARKDOWN FILE SO THE TABLE OF CONTENTS AND THE INSTALLATION NOTES LOOK LIKE A LIST.  I'M TRYING TO SOLVE PRINTING THE CHOICES ARRAY FROM THE INDEX.JS FILE AS AN OBJECT SO IT LOOKS MORE LIKE A LIST- IS IT A PARSE FUNCTION? FOUND https://www.w3schools.com/js/js_json_parse.asp OR IS IT A STRING  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString-->
 
   ## Contents
-  ${data.contents}
+  * ${data.contents}
 
   ## Description
-  <!--${data.confirmDescription} hidden class-->
+  <!--${data.confirmDescription} hidden-->
   * ${data.descriptionQ1}
   * ${data.descriptionQ2}
   * ${data.descriptionQ3}
@@ -55,7 +55,7 @@ function generateMarkdown(data) {
   ## Installation
   <!--* ${data.node}-->
   ${data.nodeInput}
-  <!--* ${data.notes}-->
+  ${data.notes}
 
   ## Usage
   * ![Preview Image](./assets/images/${data.media})
@@ -64,8 +64,8 @@ function generateMarkdown(data) {
   <!--* ${data.confirmAddUsage}-->
   
   ## Credits
-  * ${data.credits}
-  * ${data.github}
+  * [${data.creditsName}](${data.creditsLink})
+  * [${data.github}](https://github.com/${data.github})
 
   ## License
   * ${data.license}
@@ -83,7 +83,7 @@ function generateMarkdown(data) {
   * ${data.tests}
 
   ## Contact
-  * ${data.contact}
+  * [Contact Me](${data.contact})
 `;
 }
 

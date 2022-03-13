@@ -17,7 +17,7 @@ const questions = [
             type: 'input',
             name: 'title',
             message: 'What is the name of your project or title for this README.md our Genie is generating? (Required)',
-            //ANSWER FOR THIS PROJECT = README-GEN-IE
+            //ANSWER FOR THIS PROJECT = README-GENIE
             validate: titleInput => {
                 if (titleInput) {
                     return true;
@@ -208,7 +208,7 @@ const questions = [
         {
             type: 'input',
             name: 'media',
-            message: 'What is the file name and extension of the media you want to post? (Required)',
+            message: 'Please make an assets directory with an images folder inside and save your media file there. What is the file name and extension of the media you want to post? (Required)',
             validate: mediaInput => {
                 if (mediaInput) {
                     return true;
@@ -253,13 +253,26 @@ const questions = [
         },
         {
             type: 'input',
-            name: 'credits',
+            name: 'creditsName',
             message: 'Who or what organization helped you build this project?',
-            validate: creditsInput => {
-                if (creditsInput) {
+            validate: creditsNameInput => {
+                if (creditsNameInput) {
                     return true;
                 } else {
-                    console.log('You can put yourself if no one else has helped!');
+                    console.log('You can name other GitHub users, websites, etc. if no particular person or org. directly helped!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'creditsLink',
+            message: 'What is an email or the url link for the person(s) or organization(s) that helped you build this project?',
+            validate: creditsLinkInput => {
+                if (creditsLinkInput) {
+                    return true;
+                } else {
+                    console.log('You can put links to other GitHub users, websites, etc. if no particular person or org. directly helped!');
                     return false;
                 }
             }
@@ -281,13 +294,14 @@ const questions = [
             type: 'confirm',
             name: 'license',
             message: 'Please confirm your organization has, or your intent is to obtain an MIT open source license for this project. (Recommended)',
-            validate: licenseConfirm => {
-                if (licenseConfirm) {
-                    console.log('This project is indirectly licensed and/or intends to be licensed with one of the following:> MIT license \ Apache License 2.0, or \ GNU General Public License v3.0>')
-                    return true;
+            validate: licenseInput => {
+                if (licenseInput) {
+                    return `This project is indirectly licensed and/or intends to be licensed with one of the following:>* MIT license \* Apache License 2.0, or \* GNU General Public License v3.0>`;
+                    /*return true;*/
                 } else {
-                    console.log('To learn more, please visit [GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository)');
-                    return false;
+                    return ('To learn more, please visit [GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository)');
+                    /*return false;*/
+                
                 }
             }            
         },
@@ -295,13 +309,12 @@ const questions = [
             type: 'confirm',
             name: 'badges',
             message: 'Do you want to add any badges that your project may have?',
-            validate: badgesConfirm => {
-                if (badgesConfirm === true) {
-                    renderLicenseBadge(licenseConfirm)
+            validate: badgesInput => {
+                if (badgesInput === true) {
                     return true;
                 } else {
                     console.log('Coming Soon!');
-                    /*return false;*/
+                    return false;
                 }
             }
         },
@@ -322,9 +335,9 @@ const questions = [
             type: 'confirm',
             name:'contribute',
             message: 'Would you like to invite contributions to your project?', 
-            validate: contributeConfirm => {
-                if (contributeConfirm) {
-                    console.log('* Any recommendations?  Please see [contributorCovenant](https://www.contributor-covenant.org)')
+            validate: contributeInput => {
+                if (contributeInput) {
+                    console.log(`* Any recommendations?  Please see [contributorCovenant](https://www.contributor-covenant.org)`);
                     return true;
                 } else {
                     console.log('We will be open to contributors soon! See the link below to send us an email and we will get back to you ASAP.');
@@ -351,7 +364,7 @@ const questions = [
             message: 'If it is ok for users to contact you privately about your project, please provide an email address here.',
             validate: contactInput => {
                 if (contactInput) {
-                    console.log('Please feel free to email [Contact me]('+ contactInput + ')Thank you for your consideration.  As the UM Bootcamp says, "Happy Coding!"');
+                    console.log(`Please feel free to email me and thank you for your consideration.  As the UM Bootcamp says, "Happy Coding!`);
                     return true;
                 } else {
                     console.log('Coming Soon!');
@@ -495,7 +508,7 @@ Add a New Usage Example
         {
             type: 'input',
             name: 'tests',
-            message: 'Please describe any tests that ' + titleInput +' may have used or will use in the future.',
+            message: `Please describe any tests that ${data.title} may have used or will use in the future.`,
             validate: featuresInput => {
                 if (featuresInput) {
                     return true;

@@ -3,7 +3,7 @@
   README-GENIE
   
   ## Overview 
-  >As a CLI (Command Line Interface) tool, README-gen-ie walks the user through their project to organize and communicate to the community what they planned, completed, and wish to develop further.>
+  >As a CLI (Command Line Interface) tool, README-GENIE walks the user through their project to organize and communicate to the community what they planned, completed, and wish to develop further.
 
   <!--GO AHEAD AND MANUALLY FIX THIS MARKDOWN FILE SO THE TABLE OF CONTENTS AND THE INSTALLATION NOTES LOOK LIKE A LIST.  I'M TRYING TO SOLVE PRINTING THE CHOICES ARRAY FROM THE INDEX.JS FILE AS AN OBJECT SO IT LOOKS MORE LIKE A LIST- IS IT A PARSE FUNCTION? FOUND https://www.w3schools.com/js/js_json_parse.asp OR IS IT A STRING  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString-->
 
@@ -13,7 +13,8 @@
   * [Table of Contents](#contents),
   * [Description](#description),
   * [Installation](#installation),
-  * [Notes](#notes),* [Usage](#usage),
+  * [Notes](#notes),
+  * [Usage](#usage),
   * [Credits](#credits),
   * [License](#license),
   * [Badges](#badges),
@@ -22,7 +23,7 @@
   * [Tests](#tests)
 
   ## Description
-  <!--undefined hidden class-->
+  <!--undefined hidden-->
   * DRY - Don't-Repeat-Yourself means to me that whenever you refer to an old project or file to start a new one, you can write code for that instead. Then, you can concentrate on new content.
   * After spending a few hours on a detailed README file, it seemed worth it to automate it so that even the most detailed README would not take more than 30 minutes to generate.
   * README files can be tedious, so often they are done with the bare-bones minimum. The GENIE automates the organization so one can focus on communication. The benefit is producing a detailed README file in a fraction of the time.
@@ -45,7 +46,7 @@
   12) Follow the command line instructions, and after you are happy with your result, uninstall the npm packages to not clog your computer: npm uninstall inquirer,
   13) Unistall the fs package too: npm uninstall fs,
   14) See below for additional notes or alternate installation instructions.
-  <!--* undefined-->
+  undefined
 
   ## Usage
   * ![Preview Image](./assets/images/readme-genie.png)
@@ -54,8 +55,8 @@
   <!--* false-->
   
   ## Credits
-  * UM Bootcamp
-  * ChristiLewis
+  * [UM Coding Bootcamp](https://bootcamp.miami.edu/coding/)
+  * [ChristiLewis](https://github.com/ChristiLewis)
 
   ## License
   * true
@@ -64,13 +65,13 @@
   * ;
 
   ## Features
-  * node.js expediting
+  * node.js practice & README file expediting
 
   ## Contribute
   * true
 
   ## Tests
-  * TBD
+  * JEST- TBD
 
   ## Contact
-  * clc@xxxxxxx.com
+  * [Contact Me](clc@xxxxxxxx.com)
