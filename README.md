@@ -1,6 +1,6 @@
 
   # Title
-  README-GENIE
+  README-GENIE 
   
   ## Overview 
   >As a CLI (Command Line Interface) tool, README-GENIE walks the user through their project to organize and communicate to the community what they planned, completed, and wish to develop further.
@@ -50,6 +50,8 @@
 
   ## Usage
   * ![Preview Image](./assets/images/readme-genie.png)
+  * [![Watch the video]( https://img.youtube.com/vi/mL0ddYzl0Z8/hqdefault.jpg)]( https://youtu.be/mL0ddYzl0Z8)
+
   * [GitHub Repo](https://github.com/ChristiLewis/readme-gen)
   <!--* true-->
   <!--* false-->
@@ -71,7 +73,7 @@
   * true
 
   ## Tests
-  * JEST- TBD
+  * JEST -TBD
 
   ## Contact
-  * [Contact Me](clc@xxxxxxxx.com)
+  * [Contact Me](clc@xxxxxxx.com)
